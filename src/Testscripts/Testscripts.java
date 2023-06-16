@@ -13,16 +13,16 @@ public class Testscripts extends Generic
 	@Test
 	public void Script() throws InterruptedException
 	{
-		driver.findElement(By.name("email")).sendKeys("rakshitak4@gmail.com");//please provide valid email to run 
-		driver.findElement(By.name("password")).sendKeys("36@d%axQbxpCgxX");//please provide valid password to run
+		driver.findElement(By.name("email")).sendKeys("rakshit@gmail.com");//please provide valid email to run 
+		driver.findElement(By.name("password")).sendKeys("36@d%axQbxpCxX");//please provide valid password to run
 		driver.findElement(By.id("signInSubmit")).click();
 		
-		/*TO HANDLE CAPTCHA
+		/*TO HANDLE THE CAPTCHA
 		
-		driver.findElement(By.name("password")).sendKeys("36@d%axQbxpCgxX");
+		driver.findElement(By.name("password")).sendKeys("36@d%axQbxpCxX");
 		driver.findElement(By.name("guess")).click();
 		Thread.sleep(10000);
-		/*To handle captcha code manually delay is provided
+		/*To handle the captcha code manually delay is provided
 		driver.findElement(By.id("signInSubmit")).click();*/
 		
 		WebElement ele = driver.findElement(By.name("q"));
